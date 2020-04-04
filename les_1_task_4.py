@@ -9,7 +9,7 @@ ch_2 = input("Введите вторую букву: ")
 ch_1 = str.lower(ch_1)
 ch_2 = str.lower(ch_2)
 
-alf = "abcdefghijklmnopqrstuvwxyz"
+c
 
 ind_ch_1 = str.index(alf, ch_1)
 ind_ch_2 = str.index(alf, ch_2)
