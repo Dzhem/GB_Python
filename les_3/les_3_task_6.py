@@ -9,7 +9,7 @@ import random
 arr = []
 min_item = max_item = None
 ind_min_item = ind_max_item = 0
-
+sum_items = 0
 
 print('Исходный массив:')
 for i in range(20):
@@ -30,9 +30,12 @@ print(f'\nМаксимальный элемент = {max_item}, его инде�
 print(f'Минимальный элемент = {min_item}, его индекс = {ind_min_item}')
 
 if ind_max_item > ind_min_item:
-    sum_items = sum(arr[ind_min_item + 1:ind_max_item])
+    sub_arr = arr[ind_min_item + 1:ind_max_item]
 else:
-    sum_items = sum(arr[ind_max_item + 1:ind_min_item])
+    sub_arr = arr[ind_max_item + 1:ind_min_item]
+
+for item in sub_arr:
+    sum_items += item
 
 print(f'Сумма элементов, находящихся между {max_item} и {min_item} = {sum_items}')
 
